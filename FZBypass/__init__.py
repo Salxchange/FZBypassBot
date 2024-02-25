@@ -37,5 +37,6 @@ class Config:
     KATDRIVE_CRYPT  = getenv('KATDRIVE_CRYPT', '')
     UPTOBOX_TOKEN   = getenv('UPTOBOX_TOKEN', '')
     TERA_COOKIE     = getenv('TERA_COOKIE', '')
+    FORCE_SUB       = getenv('FORCE_SUB', '')
 
 Bypass = Client("FZ", api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN, plugins=dict(root="FZBypass/plugins"), parse_mode=ParseMode.HTML)
