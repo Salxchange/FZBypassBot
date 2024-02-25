@@ -28,7 +28,7 @@ class Config:
     AUTO_BYPASS     = getenv('AUTO_BYPASS', 'False').lower() == 'true'
     AUTH_CHATS      = getenv('AUTH_CHATS', '').split()
     OWNER_ID        = int(getenv('OWNER_ID')
-    DIRECT_INDEX    = getenv('DIRECT_INDEX', '').rstrip('/')
+    DIRECT_INDEX    = getenv('DIRECT_INDEX', '')
     LARAVEL_SESSION = getenv('LARAVEL_SESSION', '')
     XSRF_TOKEN      = getenv('XSRF_TOKEN', '')
     GDTOT_CRYPT     = getenv('GDTOT_CRYPT', '')
